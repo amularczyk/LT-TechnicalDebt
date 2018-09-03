@@ -1,14 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Runtime.InteropServices.ComTypes;
 
 namespace GitLogCount
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             //var fileName = @"C:\github\LT-TechnicalDebt\simpleReport.txt";
             //GenerateSimpleReport(fileName);
@@ -25,8 +23,20 @@ namespace GitLogCount
             //var fileName4 = @"C:\github\LT-TechnicalDebt\efcore-commits.txt";
             //GenerateSimpleReport(fileName4);
 
-            var fileName = @"C:\github\LT-TechnicalDebt\advancedReport.txt";
-            GenerateAdvancedReport(fileName);
+            //var fileName5 = @"C:\github\LT-TechnicalDebt\powershell-commits.txt";
+            //GenerateSimpleReport(fileName5);
+
+            //var fileName = @"C:\github\LT-TechnicalDebt\advancedReport.txt";
+            //GenerateAdvancedReport(fileName);
+
+            //var fileName1 = @"C:\github\LT-TechnicalDebt\react-advanced.txt";
+            //GenerateAdvancedReport(fileName1);
+
+            //var fileName2 = @"C:\github\LT-TechnicalDebt\efcore-advanced.txt";
+            //GenerateAdvancedReport(fileName2);
+
+            //var fileName3 = @"C:\github\LT-TechnicalDebt\powershell-advanced.txt";
+            //GenerateAdvancedReport(fileName3);
         }
 
         public static void GenerateSimpleReport(string fileName)
@@ -40,14 +50,11 @@ namespace GitLogCount
                 var lineToCheck = line.Trim();
                 if (!string.IsNullOrEmpty(lineToCheck))
                 {
-                    if (!commits.ContainsKey(lineToCheck))
-                    {
-                        commits.Add(lineToCheck, 0);
-                    }
+                    if (!commits.ContainsKey(lineToCheck)) commits.Add(lineToCheck, 0);
                     commits[lineToCheck] += 1;
                 }
             }
-            
+
             var linesToWrite = commits.OrderByDescending(c => c.Value).Select(c => $"{c.Key};{c.Value}").ToList();
 
             var newFileName = GenerateNewFileName(fileName, "data");
@@ -72,21 +79,16 @@ namespace GitLogCount
                     }
                     else
                     {
-                        if (!commits.ContainsKey(lineToCheck))
-                        {
-                            commits.Add(lineToCheck, new AdvancedData());
-                        }
+                        if (!commits.ContainsKey(lineToCheck)) commits.Add(lineToCheck, new AdvancedData());
 
                         commits[lineToCheck].CommitsCount += 1;
-                        if (!commits[lineToCheck].Authors.Contains(author))
-                        {
-                            commits[lineToCheck].Authors.Add(author);
-                        }
+                        if (!commits[lineToCheck].Authors.Contains(author)) commits[lineToCheck].Authors.Add(author);
                     }
                 }
             }
 
-            var linesToWrite = commits.OrderByDescending(c => c.Value.CommitsCount).Select(c => $"{c.Key};{c.Value.CommitsCount};{c.Value.Authors.Count}").ToList();
+            var linesToWrite = commits.OrderByDescending(c => c.Value.CommitsCount)
+                .Select(c => $"{c.Key};{c.Value.CommitsCount};{c.Value.Authors.Count}").ToList();
 
             var newFileName = GenerateNewFileName(fileName, "advanced");
             File.WriteAllLines(newFileName, linesToWrite);
@@ -103,7 +105,7 @@ namespace GitLogCount
 
     public class AdvancedData
     {
-        public int CommitsCount { get; set; } = 0;
-        public List<String> Authors { get; set; } = new List<string>();
+        public int CommitsCount { get; set; }
+        public List<string> Authors { get; set; } = new List<string>();
     }
 }
