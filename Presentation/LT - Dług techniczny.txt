@@ -95,7 +95,7 @@ W kodzie to wygląda podobnie, ale z reguły procenty układają się trochę in
 Jak myślicie: ile % kodu odpowiada za ile % problemów?
 
 4.3.2c.
-Jakby tak się zastanowić to wychodzi, że to około 5% kodu odpowiada za 95% problemów.
+Jakby tak się zastanowić to wychodzi, że to około 5% kodu odpowiada za 95% problemów. Oczywiście to nie jest w żaden sposób mierzalne, ale z reguły tak to mniej więcej wygląda.
 
 4.3.2d.
 Ale skąd to można wiedzieć, które to 5% kodu powoduje u nas tyle zmartwień?
@@ -118,7 +118,6 @@ Często spotyka się takie podejście, że 'to może się kiedyś przydać', a n
 
 4.3.3b.
 Jeśli dobrze pamiętam, to w tamtym roku Paweł Adamski (?) miał prezentację na temat bibliteki w Javie, która pomaga nam sprawdzić czy dana funckjonalność była użyta przez jakiegokolwiek użytkownika. Krzysiek proponuje pójść krok dalej i mierzyć jak często dana funkcjonalność jest używana. A po co? Bo bywa taka, że nad implementacją jakieś funkcjonlaności spędzimy miesiące, a potem i tak prawie nikt jej nie używa. A kod jest i generuje problemy. Wtedy należałoby się zastanwić, czy ta funkcjonalność jest naprawę aż tak niezbędna. Tu z pomocą może przyjść nam reguła PGF.
-
 
 4.3.3c.
 Biznes z reguły wymaga od nas robienia więcej ficzerów.
