@@ -78,10 +78,10 @@ Tylko działanie profesjonalne, ostrożne, zgodnie z dobrymi praktykami inżynie
 W związku z tym, że jeżeli chcemy mieć możliwość spłaty długu, to piszmy czysty kod.
 
 4.3.1a.
-Bardzo często w naszej pracy zdarza nam się balansować między partyzantką, a over-inżynieringiem. A naszym celem jest przecież stworzenie oprogramowania, które będzie działać, klient będzie z niego zadowolony i będzie miało skończoną ilość bugów, które jesteśmy w stanie w rozsądnym czasie naprawić.
+Bardzo często w naszej pracy zdarza nam się balansować między partyzantką, a over-inżynieringiem. A naszym celem jest przecież stworzenie oprogramowania, które będzie działać, klient będzie z niego zadowolony i będzie miało skończoną ilość bugów, które jesteśmy w stanie w rozsądnym czasie naprawić. I mimo tego, że jest dużo featurów, że jest dużo kodu, to nowe funkcjonalności dodajemy szybko.
 
 4.3.1b.
-...
+To jest wysoka jakość. To jest to, czego od nas oczekują.
 
 - piszemy prosty kod
 Piszmy więc prosty kod. Najprostszy jaki jest obecnie możliwy. Taki, który spełnia wymaganą funkcjonalność. A gdy dostaniemy informację zwrotną, że dana funkcjonalność ma mieć możliwość rozszerzania, to wtedy ten kod zrefaktoryzujemy. Bo prosty kod powoduje, że innym jest łatwiej go zrozumieć.
@@ -101,12 +101,25 @@ Jakby tak się zastanowić to wychodzi, że to około 5% kodu odpowiada za 95% p
 Ale skąd to można wiedzieć, które to 5% kodu powoduje u nas tyle zmartwień?
 Tutaj z pomocą przychodzi nam git log.
 Mamy tam informację kto zmieniał, kiedy i co.
-Teraz wystarczy, że zrobimy sobie pętlę for i posortujemy pliki pod względem ilości commitów.
+Dzięki temu możemy sobie zrobić różne metryki, które może pomogą nam znaleźć gdzie jest największy dług.
 
 4.3.2e.
+Jedną z takich najprostszych metryk jest zrobienie pętli for i posortowanie plików pod względem ilości commitów od tego co miał najwięcej commitów, do tego co miał ich najmniej. Pokaże przykład dla kilku repozytoriów.
+
+4.3.2f. (React)
+To jest biblioteka Reacta. Kod front-endowy. Można zauważyć, że mało plików miało dużo commitów, a większość miała pojedyńcze wrzutki.
+
+4.3.2g. (PowerShell)
+To jest PowerShell. Kod napisany w .NET. 
+
+4.3.2h. (EntityFrameworkCore)
+To jest EntityFramework.
+
+4.3.2i. (.NET WebApi)
+A to jest back-end naszego projektu w PGS dla klienta.
 Dość łatwo znaleźć podobieństwa między tymi wykresami. Prosta pętla for po git logu pokazuje nam gdzie projekt zmienia się najczęściej. Oczywiście ta metryka nie mówi nam, że tutaj jest dług techniczny, mówi nam natomiast o tym, że te pliki stanowią jądro systemu.
 
-4.3.2f.
+4.3.2j. (Advanced)
 Ale jak do tego dodamy jeszcze autorów, wtedy może nam wyjść które pliki zmieniają się najczęściej, zmiany do nich robi najwięcej autorów i prawdopodobnie w nich jest największy dług techniczny.
 
 - monitorujemy gdzie narastają odsetki
