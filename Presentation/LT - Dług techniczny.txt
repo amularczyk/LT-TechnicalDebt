@@ -2,15 +2,15 @@
 Cześć. Nazywam się Adrian Mularczyk i dzisiaj opowiem wam o długu techcznimy jako narzędziu profesjonalisty.
 
 0. Krzysiek Kędzierski
-Prezentacja nie jest moja, tzn. przygotowałem ją sam, ale materiał, który wam przedstawię to okrojona wersja wystąpienia Krzyśka Kędzierskiego podczas konferencji Boiling Frogs 2018.
-PGS zapłacił mi za bilet na tę konferencję i w zamian oczekiwał, że zrobię LT na temat jednej z prelekcji. Wystąpienie Krzyśka podobało mi się najbardziej, stąd zdecydowałem się pokrótce wam ją przedstawić. Mam nadzieję, że przedstawiony materiał przekona was, że warto udać się na tę konferencję. A jakby ktoś chciał posłuchać pełnego wystąpienia Krzyśka, to link poniżej - mogę go również przesłać osobom zainteresowanym.
+Prezentacja nie jest moja, tzn. przygotowałem ją sam, ale materiał, który wam przedstawię to okrojona wersja wystąpienia Krzyśka Kędzierskiego z konferencji Boiling Frogs 2018.
+PGS zapłacił mi za bilet na tę konferencję i w zamian oczekiwał, że zrobię LT na temat jednej z prelekcji. Wystąpienie Krzyśka spodobało mi się najbardziej, stąd zdecydowałem się pokrótce wam ją przedstawić. Mam nadzieję, że przedstawiony materiał przekona was, że warto udać się na tę konferencję. A jakby ktoś chciał posłuchać pełnego wystąpienia Krzyśka, to tutaj jest link - mogę go również przesłać osobom zainteresowanym.
 
 
 1. Wprowadzenie - wyjaśnienie problemu
-Jaki jest dług techniczny systemu, jeśli wiemy, że nie dodamy do niego żadnego nowego feature, ani nie naprawię ani jednego buga?
+Jaki jest dług techniczny systemu, jeśli wiemy, że nie dodamy do niego żadnego nowego feature, ani nie naprawimy ani jednego buga?
 Bez względu na to jak wygląda kod, czy jest w nim syf czy nie, to dług techniczny wynosi 0.
 0 koszt developmentu, to 0 dług.
-A co gdy zdecydujemy się dodać jeden drobny feature do naszego systemu? Jaki jest teraz dług? No cóż... To zależy. Czasem może być to 15 minut roboty, a czasem może to być kilka miesięcy dłubania. Zatem o długu możemy mówić dopiero na styku naszego kodu i nowych wymagań lub konieczności poprawy starych wymagań. Połączenie tych dwóch rzeczy daje dług techniczny.
+A co gdy zdecydujemy się dodać jeden drobny feature do naszego systemu? Jaki jest wtedy dług? No cóż... To zależy. Czasem może być to 15 minut roboty, a czasem może to być kilka miesięcy dłubania. Zatem o długu możemy mówić dopiero na styku naszego kodu i nowych wymagań lub konieczności poprawy starych wymagań. Połączenie tych dwóch rzeczy daje dług techniczny.
 
 
 2a. Dług techniczny 
@@ -18,7 +18,7 @@ Czyli koszt pracy jaką musimy wykonać, aby do naszego systemu dodać nową fun
 Taka definicja nie ma nic wspólnego z tym, czy kod jest czysty, czy brudy, czy są testy, czy ich nie ma, ani jak duże jest pokrycie kodu testami. Czasami może zdażyć się i tak, że pomimo tego, że nasz kod jest czysty, to pojawi się takie nowe wymaganie, że i tak będziemy musieli wszystko przerobić.
 
 2b. Tetris
-Metaforą długo technicznego jest gra w tetris - czarne miejsca, które przeszkadzają nam w grze, to dług technoczniy; plansza, to nasz system, a to co spada z góry, to nowe wymagania jakie biznes nam daje. I czasami mamy taki przywilej, że wiemy jakie będzie następne wymaganie, które na nas spadnie. Naszym zadaniem, jako developerów jest doprowadzanie do sytuacji, gdy stan planszy jest jak najczystszy, tak, abyśmy my mogli dalej pracować, a także, aby stan naszej gry, czyli stan naszego systemu był w takiej formie, żeby inni bez problemu również mogli nad tym dalej pracować.
+Dobrą metaforą długo technicznego jest gra w tetris - czarne miejsca, które przeszkadzają nam w grze, to dług technoczniy; plansza, to nasz system, a to co spada z góry, to nowe wymagania jakie biznes nam daje. I czasami mamy taki przywilej, że wiemy jakie będzie następne wymaganie, które na nas spadnie. Naszym zadaniem, jako developerów jest doprowadzanie do sytuacji, gdy stan planszy jest jak najczystszy, tak, abyśmy my mogli dalej pracować, a także, aby stan naszej gry, czyli stan naszego systemu był w takiej formie, żeby inni bez problemu również mogli nad tym dalej pracować.
 
 
 3a. Design Stamina Hipotesis (Martin Fowler)
@@ -33,9 +33,9 @@ Ale w rzeczywitości, z czasem jest coraz gorzej, coraz trudniej.
 Z drugiej strony mamy skrajną sytuację gdy mamy projekt robiony przez studentów, którzy na początku pędzą z ficzerami i dodają je bardzo szybko, dużo szybciej niż doświadczeni programiści, ale w pewnym w momencie przekraczają próg bólu gdzie nie można nic dodać i każda nowa linijka jest w zasadzie niemożliwa do dodania.
 
 3d. DSH
-Najważniejszym punktem na tym wykresie jest to miejsce, zdefiniowane jako konieczność spłaty długu. Mówi nam to, że myśląc tylko o biznesie i robią rzeczy na szybko, dochodzimy do momentu, gdy dług trzeba spłacić i poświęcić czas na dopracowanie aplikacji, aby można było oscylować w okolicach zielonej linii.
+Najważniejszym punktem na tym wykresie jest to miejsce, zdefiniowane jako konieczność spłaty długu. Mówi nam to, że myśląc tylko o biznesie i robiąc rzeczy na szybko, dochodzimy do momentu, gdy dług trzeba spłacić i poświęcić czas na dopracowanie aplikacji, aby można było oscylować w okolicach zielonej linii.
 
-Problem jaki się tutaj pojawia jest to, że jak mamy teraz wytłumaczyć biznesowi, że przez najbliższe kilka sprintów nie dodamy żadnej nowej funkcjonlaności, a jedynie będziemy refaktorować. Że z punktu widzenia użytkownika wszystko będzie wyglądać i działać dokładnie tak samo, ale w kodzie będzie to wyglądać lepiej, że teraz w kodzie będzie ładnie.
+Problemem jaki się tutaj pojawia jest to, że jak mamy teraz wytłumaczyć biznesowi, że przez najbliższe kilka sprintów nie dodamy żadnej nowej funkcjonlaności, a jedynie będziemy refaktorować. Że z punktu widzenia użytkownika wszystko będzie wyglądać i działać dokładnie tak samo, ale w kodzie będzie to wyglądać lepiej, że teraz w kodzie będzie ładnie.
 Biznes może czegoś takiego nie zaakceptować i ja się z tym w pełni zgadzam. Uważam, że podróż czerwoną linią generuje dług całkowicie niespłacalny i aby mieć możliwość spłaty długu musimy być bliżej linii zielonej.
 
 
@@ -47,7 +47,7 @@ Postaram się przedstawić wam kilka rad, które w naszej codziennej pracy pomog
 Tu z pomocą ponownie przychodzi nam Martin Fowler. Zaczął on się zastanawiać z jakich naszych postawch, z jakich naszych zachowań, może powstać dług techniczny. Z jakich naszych postaw może pojawić się konieczność refaktoryzacji w przyszłości. I stworzył on Technical debt quadrant. Ten wykres mówi nam że...
 
 4.1a. TDQ
-Pracując jako developer możemy pracować na dwa sposoby - albo możemy działać w sposób profesjonalny, robiąc wszystko jak należy i postępując rozważnie, albo w sposób nieprofesjonalny i postępując lekkomyślnie. Nieważne na którym ze sposobów będziemy pracowali możemy doprowadzić do powstania długu technicznego. Jednakże..
+Pracując jako developer możemy pracować na dwa sposoby - albo możemy działać w sposób profesjonalny, robiąc wszystko jak należy i postępując rozważnie, albo w sposób nieprofesjonalny i postępując lekkomyślnie. Nieważne na który ze sposobów będziemy pracowali możemy doprowadzić do powstania długu technicznego. Jednakże..
 
 4.1b. TDQ
 Możemy to zrobić w sposób celowy, gdy doskonale wiemy, że ten dług powstaje. Lub nieumyślny, że dopiero po czasie orientujemy się, że dług został wytworzony. I te cztery możliwości sumują się do całokształtu. Oto jak się prezentują:
@@ -56,7 +56,7 @@ Możemy to zrobić w sposób celowy, gdy doskonale wiemy, że ten dług powstaje
 Pierwszy wariat to typowy zespół studentów. Pewnej wiedzy nie da się zdobyć na studiach i przychodzi ona dopiero wraz z doświadczeniem. Taki zespół może niewiedzieć po co są testy jednostkowe i dlaczego należy je pisać. Nie rozumieją tego, że bez testów poruszamy się trochę jak we mgle. Na to na szczęście mamy rozwiązania, takie jak code review, pair programing, workshopy czy lightning talki. Gorzej jest niestety u góry tego wykresu, bo działamy wtedy nieprofesjonalnie i w pełni świadomie perfidnie zaciągamy dług techniczny. Idąc do góry...
 
 4.1.2. TDQ
-W naszej branży wyłoniła się taka warstwa ludzi, że są już zmęczeni całym tym programowaniem, całym tym legacy kodem, że już im się nie chce. Krzysiek nazwał ich 'za starzy na JavaScript, za młodzi na śmierć'. Idąc dalej...
+W naszej branży wyłoniła się taka warstwa ludzi, że są już zmęczeni całym tym programowaniem, całym tym legacy kodem, że już im się nie chce. Krzysiek pieszczotliwie nazwał ich 'za starzy na JavaScript, za młodzi na śmierć'. Idąc dalej...
 
 4.1.3. TDQ
 Mamy sytuację gdy działamy profesjonalnie, mamy czysty kod, piszemy testy i zaciągamy dług techniczny. To jest takie MVP na poziomie feature. Mówimy sobie wtedy: 'Ok, nie róbmy wielkiej rzeczy, zróbmy najmniejszą rzecz jaka jest przydatna, która realizuje jakieś potrzeby, zobaczmy jak to będzie wyglądało w przyszłości i dopiero jak okaże się, że jest konieczność reaktrozyracji, że ten feature wypalił, to spłaćmy dług. Nie róbmy od razu wielkiej rzeczy, bo to nie ma sensu.'. To jest bardzo dobry scenariusz, najlepszy z tych wszystkich. Idąc na dół...
@@ -65,7 +65,7 @@ Mamy sytuację gdy działamy profesjonalnie, mamy czysty kod, piszemy testy i za
 Dochodzimy do momentu, w którym każdy developer, który jest zapasjonowany programowaniem miał kiedyś w życiu. Taka sytuacja, kiedy mówimy po czasie - 'aaa... to teraz już wiem jak to zrobić, szkoda że nie ma czasu, ale jakby był, to bym to zrobił tak, a tutaj tak.'. To jest sytuacja kiedy dopiero po czasie orientujemy się, że dług został zaciągnięty.
 
 4.2 Czy możliwa jest spłata długu
-Odpowiedzmy sobie teraz na pytanie w której z tych sytuacji możliwy jest spłacalny dług?
+Odpowiedzmy sobie teraz na pytanie w której z tych sytuacji możliwa jest spłata długu?
 
 4.2a.
 Krzysiek uważa, że nieprofesjonalne działanie zawsze tworzy niespłacalny dług. Patrząc na rotacje w zespołach i na cykl życia projektu.
@@ -75,13 +75,13 @@ Tylko działanie profesjonalne, ostrożne, zgodnie z dobrymi praktykami inżynie
 	
 4.3 Spłacalny dług techniczny
 - piszemy czysty kod
-W związku z tym, że jeżeli chcemy mieć możliwość spłaty długu, to piszmy czysty kod.
+W związku z tym, jeżeli chcemy mieć możliwość spłaty długu, to piszmy czysty kod.
 
 4.3.1a.
 Bardzo często w naszej pracy zdarza nam się balansować między partyzantką, a over-inżynieringiem. A naszym celem jest przecież stworzenie oprogramowania, które będzie działać, klient będzie z niego zadowolony i będzie miało skończoną ilość bugów, które jesteśmy w stanie w rozsądnym czasie naprawić. I mimo tego, że jest dużo featurów, że jest dużo kodu, to nowe funkcjonalności dodajemy szybko.
 
 4.3.1b.
-To jest wysoka jakość. To jest to, czego od nas oczekują.
+To jest ta wysoka jakość. To jest to, czego od nas oczekują.
 
 - piszemy prosty kod
 Piszmy więc prosty kod. Najprostszy jaki jest obecnie możliwy. Taki, który spełnia wymaganą funkcjonalność. A gdy dostaniemy informację zwrotną, że dana funkcjonalność ma mieć możliwość rozszerzania, to wtedy ten kod zrefaktoryzujemy. Bo prosty kod powoduje, że innym jest łatwiej go zrozumieć.
@@ -98,7 +98,7 @@ Jak myślicie: ile % kodu odpowiada za ile % problemów?
 Jakby tak się zastanowić to wychodzi, że to około 5% kodu odpowiada za 95% problemów. Oczywiście to nie jest w żaden sposób mierzalne, ale z reguły tak to mniej więcej wygląda.
 
 4.3.2d.
-Ale skąd to można wiedzieć, które to 5% kodu powoduje u nas tyle zmartwień?
+Ale jak można się dowiedzieć, które to 5% kodu powoduje u nas tyle zmartwień?
 Tutaj z pomocą przychodzi nam git log.
 Mamy tam informację kto zmieniał, kiedy i co.
 Dzięki temu możemy sobie zrobić różne metryki, które może pomogą nam znaleźć gdzie jest największy dług.
@@ -130,28 +130,31 @@ Czy ktoś z was widział kiedyś w swojej aplikacji nieużywany kod? Domyślam s
 Często spotyka się takie podejście, że 'to może się kiedyś przydać', a niepotrzebny kod, często generuje dodatkowe problemy.
 
 4.3.3b.
-Jeśli dobrze pamiętam, to w tamtym roku Paweł Adamski (?) miał prezentację na temat bibliteki w Javie, która pomaga nam sprawdzić czy dana funckjonalność była użyta przez jakiegokolwiek użytkownika. Krzysiek proponuje pójść krok dalej i mierzyć jak często dana funkcjonalność jest używana. A po co? Bo bywa taka, że nad implementacją jakieś funkcjonlaności spędzimy miesiące, a potem i tak prawie nikt jej nie używa. A kod jest i generuje problemy. Wtedy należałoby się zastanwić, czy ta funkcjonalność jest naprawę aż tak niezbędna. Tu z pomocą może przyjść nam reguła PGF.
+Jeśli dobrze pamiętam, to w tamtym roku Paweł Adamski miał prezentację na temat bibliteki w Javie, która pomaga nam sprawdzić czy dana funckjonalność była użyta przez jakiegokolwiek użytkownika. Krzysiek proponuje pójść krok dalej i mierzyć jak często dana funkcjonalność jest używana. A po co? Bo bywa taka, że nad implementacją jakieś funkcjonlaności spędzimy miesiące, a potem i tak prawie nikt jej nie używa. A kod jest i generuje problemy. Wtedy należałoby się zastanwić, czy ta funkcjonalność jest naprawę aż tak niezbędna. Tu z pomocą może przyjść nam reguła PGF.
 
 4.3.3c.
-Biznes z reguły wymaga od nas robienia więcej ficzerów.
+O czym ona jest?
 
 4.3.3d.
-Więcej ficzerów powoduje więcej kodu, bo nie da się dodać nowej funkcjonalności usuwając kod.
+Biznes z reguły wymaga od nas robienia więcej ficzerów.
 
 4.3.3e.
-Więcej kodu powoduje, że złożoność kodu wzrasta, bo praktycznie zawsze jest tak, że im jest więcej kodu, tym jest on bardziej złożony.
+Więcej ficzerów powoduje więcej kodu, bo nie da się dodać nowej funkcjonalności usuwając kod.
 
 4.3.3f.
-Większa złożoność kodu powoduje większy dług techniczny.
+Więcej kodu powoduje, że złożoność kodu wzrasta, bo praktycznie zawsze jest tak, że im jest więcej kodu, tym jest on bardziej złożony.
 
 4.3.3g.
-A większy dług, to więcej problemów.
+Większa złożoność kodu powoduje większy dług techniczny.
 
 4.3.3h.
-I tu pojawia się lekka nieścisłość. Dlaczego w naszym świecie, gdy mamy więcej problemów, gdy mamy jeszcze nie wpełni wszystko działające, to musimy dodawać kolejne ficzery? Taka pętla w końcu prowadzi do...
+A większy dług, to więcej problemów.
 
 4.3.3i.
-reguły PGF - Pętla gnijących ficzerów. Powinniśmy starać się tę pętlę przerwać, bo możemy wpaść w taki cykl, że już nie będzie odwrotu.
+I tu pojawia się lekka nieścisłość. Dlaczego w naszym świecie, gdy mamy więcej problemów, gdy mamy jeszcze nie wpełni wszystko działające, to musimy dodawać kolejne ficzery? Taka pętla w końcu prowadzi do...
+
+4.3.3j.
+reguły PGF - Pętli gnijących ficzerów. Powinniśmy starać się tę pętlę przerwać, bo możemy wpaść w taki cykl, że już nie będzie odwrotu.
 
 - usuwamy nieużywane funkcjonalności
 Usuwajmy więc nieużywane funkcjonalności, gdyż to ułatwia życie nam, bo mamy mniej kodu o który musimy się martwić, mniej testów do utrzymania, a użytkownikom ułatwia to życie również, bo mają mniej ficzerów, któych i tak nie używają.
@@ -169,12 +172,12 @@ Wielu z nas pracuje w metodyce agile, a on daje nam samoorganizację. Samoorgani
 
 4.3.4d.
 We cannot be agile if our code sucks - definiuje to, jaki powinien być agilowy developer. Nie że przychodzę na daily punktualnie tylko...	
-Jako developer powinniem dbać o swój kod, bo wiem, że jak mój kod nie będzie przystosowany na zmiany, nie będzie spełniał prostych zasad inżynierii oprogramowania czy trzymał się dobrych praktyk, to nigdy nie będę mógł być agile.
+Jako developer powinienem dbać o swój kod, bo wiem, że jak mój kod nie będzie przystosowany na zmiany, nie będzie spełniał prostych zasad inżynierii oprogramowania czy trzymał się dobrych praktyk, to nigdy nie będę mógł być agile.
 Nie powinno być tak, że mądry developer, doświadczony developer idzie do managera i pyta się go na ile modułów powinien podzielić aplikację albo czy mamy czas, aby pisać testy. To jest trochę niedopuszczalne, bo jak my sami nie będziemy traktować się jak profesjonalnistów, to inni też nas tak nie będą traktowali.
 	
 - traktujmy siebie jako profesjonalistów
 
 To są punkty które zaprezentował Krzysiek. Można się z nimi zgadzać, można się nie zgadzać. Te rzeczy, które zostały zdefiniowane jako cechy spłacalnego długo technicznego są połączone przez dwa fakty. Pierwszym z nim jest to, że poruszają się w okół szeroko pojętego agile, który umożliwa nam zwinne reagowanie i czasami skakanie w bok, aby zrefaktoryzować jaką funkcjonalność i zmniejszyć dług. Drugą rzeczą, która łączy te punkty jest to, że ich wdrożenie zależy od nas, to my musimy podjąć inicjatywę. To my musimy zacząć monitorować gdzie narastają odsetki, dbać o to, aby nasz kod był czysty i prosty, usuwać nieużywany kod i funkcjonalności.
-Wielu programistów chwali się, że pisze czysty kod, ale w roku 2018 to jest po prostu podstawa. Wymagajmy więc od siebie trochę więcej, gdyż tylko tak możemy stworzyć społeczność profesjonalistów, która jest doceniania i szanowana za pracę, która wykonuje.
+Wielu programistów chwali się, że pisze czysty kod, ale w roku 2018 to jest po prostu podstawa. Wymagajmy więc od siebie trochę więcej, gdyż tylko tak możemy stworzyć społeczność profesjonalistów, która jest doceniania i szanowana za pracę, którą wykonuje.
 	
 4.4. Dziękuję
