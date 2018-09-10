@@ -2,8 +2,8 @@
 Cześć. Nazywam się Adrian Mularczyk i dzisiaj opowiem wam o długu techcznimy jako narzędziu profesjonalisty.
 
 0. Krzysiek Kędzierski
-Prezentacja nie jest moja, tzn. przygotowałem ją sam, ale materiał, który wam przedstawię to okrojona wersja wystąpienia Krzyśka Kędzierskiego z konferencji Boiling Frogs 2018.
-PGS zapłacił mi za bilet na tę konferencję i w zamian oczekiwał, że zrobię LT na temat jednej z prelekcji. Wystąpienie Krzyśka spodobało mi się najbardziej, stąd zdecydowałem się pokrótce wam ją przedstawić. Mam nadzieję, że przedstawiony materiał przekona was, że warto udać się na tę konferencję. A jakby ktoś chciał posłuchać pełnego wystąpienia Krzyśka, to tutaj jest link - mogę go również przesłać osobom zainteresowanym.
+Prezentacja nie jest moja, tzn. przygotowałem ją sam, ale materiał, który wam przedstawię, to okrojona wersja wystąpienia Krzyśka Kędzierskiego z konferencji Boiling Frogs 2018.
+PGS zapłacił mi za bilet na tę konferencję i w zamian oczekiwał, że zrobię LT na temat jednej z prelekcji. Wystąpienie Krzyśka spodobało mi się najbardziej, stąd zdecydowałem się pokrótce wam je przedstawić. Mam nadzieję, że przedstawiony materiał przekona was, że warto udać się na tę konferencję. A jakby ktoś chciał posłuchać pełnego wystąpienia Krzyśka, to tutaj jest link - mogę go również przesłać osobom zainteresowanym.
 
 
 1. Wprowadzenie - wyjaśnienie problemu
@@ -23,7 +23,7 @@ Dobrą metaforą długo technicznego jest gra w tetris - czarne miejsca, które 
 
 3a. Design Stamina Hipotesis (Martin Fowler)
 Skoro wiemy, że nasz dług techniczny zależy w dużej mierze od ficzerów, które dodajemy, to zastanówmy się, jak nasze systemy zachowują się pod wpływem dodawania tych ficzerów w czasie.
-Tutaj przychodzi z pomocą Design Stamina Hipotesis stworzony przez Martina Fowlera.
+Tutaj z pomocą przychodzi nam Design Stamina Hipotesis stworzony przez Martina Fowlera.
 
 3b. DSH
 Ten wykres mówi nam, ze w idealnym świecie jesteśmy w stanie dodawać nowe ficzery ciągle bardzo szybko, w dobrym tempie, ponieważ stary kod nam nie przeszkadza.
@@ -87,7 +87,7 @@ To jest ta wysoka jakość. To jest to, czego od nas oczekują.
 Piszmy więc prosty kod. Najprostszy jaki jest obecnie możliwy. Taki, który spełnia wymaganą funkcjonalność. A gdy dostaniemy informację zwrotną, że dana funkcjonalność ma mieć możliwość rozszerzania, to wtedy ten kod zrefaktoryzujemy. Bo prosty kod powoduje, że innym jest łatwiej go zrozumieć.
 
 4.3.2a.
-Problem z długiem technicznym jest taki, że trudno go zmierzyć, ciężko dowiedzieć się gdzie narastają odsetki i kiedy powinniśmy go spłacić oraz w jakim zakresie.
+Problem z długiem technicznym jest taki, że trudno go zmierzyć, ciężko dowiedzieć się gdzie narastają odsetki i kiedy powinniśmy je spłacić oraz w jakim zakresie.
 Tutaj z pomocą może przyjść zasada pareto, która w dużym uproszczeniu mówi o tym, że 20% wysiłku powoduje 80% rezultatu.
 W kodzie to wygląda podobnie, ale z reguły procenty układają się trochę inaczej.
 
@@ -120,7 +120,7 @@ A to jest back-end naszego projektu w PGS dla klienta.
 Dość łatwo znaleźć podobieństwa między tymi wykresami. Prosta pętla for po git logu pokazuje nam gdzie projekt zmienia się najczęściej. Oczywiście ta metryka nie mówi nam, że tutaj jest dług techniczny, mówi nam natomiast o tym, że te pliki stanowią jądro systemu.
 
 4.3.2j. (Advanced)
-Ale jak do tego dodamy jeszcze autorów, wtedy może nam wyjść które pliki zmieniają się najczęściej, zmiany do nich robi najwięcej autorów i prawdopodobnie w nich jest największy dług techniczny.
+Jak do tego dodamy jeszcze autorów, wtedy może nam wyjść które pliki zmieniają się najczęściej, zmiany do nich robi najwięcej autorów i prawdopodobnie w nich jest największy dług techniczny.
 
 - monitorujemy gdzie narastają odsetki
 Monitorujmy więc gdzie narastają odsetki naszego systemu, bo dzięki temu możemy dowiedzieć się gdzie nasz system żyje na prawdę.
