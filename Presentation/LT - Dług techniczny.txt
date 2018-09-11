@@ -3,13 +3,15 @@ Cześć. Nazywam się Adrian Mularczyk i dzisiaj opowiem wam o długu techcznimy
 
 0. Krzysiek Kędzierski
 Prezentacja nie jest moja, tzn. przygotowałem ją sam, ale materiał, który wam przedstawię, to okrojona wersja wystąpienia Krzyśka Kędzierskiego z konferencji Boiling Frogs 2018.
-PGS zapłacił mi za bilet na tę konferencję i w zamian oczekiwał, że zrobię LT na temat jednej z prelekcji. Wystąpienie Krzyśka spodobało mi się najbardziej, stąd zdecydowałem się pokrótce wam je przedstawić. Mam nadzieję, że przedstawiony materiał przekona was, że warto udać się na tę konferencję. A jakby ktoś chciał posłuchać pełnego wystąpienia Krzyśka, to tutaj jest link - mogę go również przesłać osobom zainteresowanym.
+PGS zasponsorowała mi za bilet na tę konferencję i w zamian oczekiwał, że zrobię LT na temat jednej z prelekcji. Wystąpienie Krzyśka spodobało mi się najbardziej, stąd zdecydowałem się pokrótce wam je przedstawić. Mam nadzieję, że przedstawiony materiał przekona was, że warto udać się na tę konferencję. A jakby ktoś chciał posłuchać pełnego wystąpienia Krzyśka, to tutaj jest link - mogę go również przesłać osobom zainteresowanym.
 
 
-1. Wprowadzenie - wyjaśnienie problemu
+1a. Wprowadzenie - wyjaśnienie problemu
 Jaki jest dług techniczny systemu, jeśli wiemy, że nie dodamy do niego żadnego nowego feature, ani nie naprawimy ani jednego buga?
 Bez względu na to jak wygląda kod, czy jest w nim syf czy nie, to dług techniczny wynosi 0.
 0 koszt developmentu, to 0 dług.
+
+1b.
 A co gdy zdecydujemy się dodać jeden drobny feature do naszego systemu? Jaki jest wtedy dług? No cóż... To zależy. Czasem może być to 15 minut roboty, a czasem może to być kilka miesięcy dłubania. Zatem o długu możemy mówić dopiero na styku naszego kodu i nowych wymagań lub konieczności poprawy starych wymagań. Połączenie tych dwóch rzeczy daje dług techniczny.
 
 
@@ -33,7 +35,7 @@ Ale w rzeczywitości, z czasem jest coraz gorzej, coraz trudniej.
 Z drugiej strony mamy skrajną sytuację gdy mamy projekt robiony przez studentów, którzy na początku pędzą z ficzerami i dodają je bardzo szybko, dużo szybciej niż doświadczeni programiści, ale w pewnym w momencie przekraczają próg bólu gdzie nie można nic dodać i każda nowa linijka jest w zasadzie niemożliwa do dodania.
 
 3d. DSH
-Najważniejszym punktem na tym wykresie jest to miejsce, zdefiniowane jako konieczność spłaty długu. Mówi nam to, że myśląc tylko o biznesie i robiąc rzeczy na szybko, dochodzimy do momentu, gdy dług trzeba spłacić i poświęcić czas na dopracowanie aplikacji, aby można było oscylować w okolicach zielonej linii.
+Najważniejszym punktem na tym wykresie jest to miejsce, zdefiniowane jako konieczność spłaty długu. Mówi nam ono, że myśląc tylko o biznesie i robiąc rzeczy na szybko, dochodzimy do momentu, gdy dług trzeba spłacić i poświęcić czas na dopracowanie aplikacji, aby można było oscylować w okolicach zielonej linii.
 
 Problemem jaki się tutaj pojawia jest to, że jak mamy teraz wytłumaczyć biznesowi, że przez najbliższe kilka sprintów nie dodamy żadnej nowej funkcjonlaności, a jedynie będziemy refaktorować. Że z punktu widzenia użytkownika wszystko będzie wyglądać i działać dokładnie tak samo, ale w kodzie będzie to wyglądać lepiej, że teraz w kodzie będzie ładnie.
 Biznes może czegoś takiego nie zaakceptować i ja się z tym w pełni zgadzam. Uważam, że podróż czerwoną linią generuje dług całkowicie niespłacalny i aby mieć możliwość spłaty długu musimy być bliżej linii zielonej.
