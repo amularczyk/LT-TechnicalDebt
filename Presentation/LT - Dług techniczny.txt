@@ -58,13 +58,15 @@ Możemy to zrobić w sposób celowy, gdy doskonale wiemy, że ten dług powstaje
 Pierwszy wariat to typowy zespół studentów. Pewnej wiedzy nie da się zdobyć na studiach i przychodzi ona dopiero wraz z doświadczeniem. Taki zespół może niewiedzieć po co są testy jednostkowe i dlaczego należy je pisać. Nie rozumieją tego, że bez testów poruszamy się trochę jak we mgle. Na to na szczęście mamy rozwiązania, takie jak code review, pair programing, workshopy czy lightning talki. Gorzej jest niestety u góry tego wykresu, bo działamy wtedy nieprofesjonalnie i w pełni świadomie perfidnie zaciągamy dług techniczny. Idąc do góry...
 
 4.1.2. TDQ
-W naszej branży wyłoniła się taka warstwa ludzi, że są już zmęczeni całym tym programowaniem, całym tym legacy kodem, że już im się nie chce. Krzysiek pieszczotliwie nazwał ich 'za starzy na JavaScript, za młodzi na śmierć'. Idąc dalej...
+W naszej branży wyłoniła się taka warstwa ludzi, że są już zmęczeni całym tym programowaniem, całym tym legacy kodem, że już im się nie chce. Krzysiek pieszczotliwie nazwał ich 'za starzy na JavaScript, za młodzi na śmierć'. Dobra wiadomość jest taka, że takich osób prawdopodobnie wśród nas nie ma, bo im by się już nie chciało przyjść posłuchać LT. Idąc dalej...
 
 4.1.3. TDQ
 Mamy sytuację gdy działamy profesjonalnie, mamy czysty kod, piszemy testy i zaciągamy dług techniczny. To jest takie MVP na poziomie feature. Mówimy sobie wtedy: 'Ok, nie róbmy wielkiej rzeczy, zróbmy najmniejszą rzecz jaka jest przydatna, która realizuje jakieś potrzeby, zobaczmy jak to będzie wyglądało w przyszłości i dopiero jak okaże się, że jest konieczność reaktrozyracji, że ten feature wypalił, to spłaćmy dług. Nie róbmy od razu wielkiej rzeczy, bo to nie ma sensu.'. To jest bardzo dobry scenariusz, najlepszy z tych wszystkich. Idąc na dół...
 
 4.1.4. TDQ
 Dochodzimy do momentu, w którym każdy developer, który jest zapasjonowany programowaniem miał kiedyś w życiu. Taka sytuacja, kiedy mówimy po czasie - 'aaa... to teraz już wiem jak to zrobić, szkoda że nie ma czasu, ale jakby był, to bym to zrobił tak, a tutaj tak.'. To jest sytuacja kiedy dopiero po czasie orientujemy się, że dług został zaciągnięty.
+
+Najważniejsze jest teraz to, aby zdać sobie sprawę w której ćwiartce się jest, a w której chciałoby się być. Ja już w swojej karierze byłem we wszystkich czterech. Obecnie staram się być w prawej-górej, wychodzi różnie.
 
 4.2 Czy możliwa jest spłata długu
 Odpowiedzmy sobie teraz na pytanie w której z tych sytuacji możliwa jest spłata długu?
@@ -119,10 +121,15 @@ To jest EntityFramework.
 
 4.3.2i. (.NET WebApi)
 A to jest back-end naszego projektu w PGS dla klienta.
+
+4.3.2j.
 Dość łatwo znaleźć podobieństwa między tymi wykresami. Prosta pętla for po git logu pokazuje nam gdzie projekt zmienia się najczęściej. Oczywiście ta metryka nie mówi nam, że tutaj jest dług techniczny, mówi nam natomiast o tym, że te pliki stanowią jądro systemu.
 
-4.3.2j. (Advanced)
+4.3.2k. (Advanced)
 Jak do tego dodamy jeszcze autorów, wtedy może nam wyjść które pliki zmieniają się najczęściej, zmiany do nich robi najwięcej autorów i prawdopodobnie w nich jest największy dług techniczny.
+
+4.3.2l. (Advanced)
+To prawdopodobnie byłby te pliki. Oczywiście pewności nie ma. Jednakże, jeśli ktoś jest zainteresowany tym tematem, to na githubie można znaleźć różne ciekawe metryki.
 
 - monitorujemy gdzie narastają odsetki
 Monitorujmy więc gdzie narastają odsetki naszego systemu, bo dzięki temu możemy dowiedzieć się gdzie nasz system żyje na prawdę.
