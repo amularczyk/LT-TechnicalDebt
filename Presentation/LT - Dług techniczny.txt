@@ -2,9 +2,11 @@
 Cześć. Nazywam się Adrian Mularczyk i dzisiaj opowiem wam o długu techcznimy jako narzędziu profesjonalisty.
 
 0. Krzysiek Kędzierski
-Prezentacja nie jest moja, tzn. przygotowałem ją sam, ale materiał, który wam przedstawię, to okrojona wersja wystąpienia Krzyśka Kędzierskiego z konferencji Boiling Frogs 2018.
+Prezentacja nie jest moja, tzn. przygotowałem ją sam, ale materiał, który wam przedstawię, to w głównej mierze okrojona wersja wystąpienia Krzyśka Kędzierskiego z konferencji Boiling Frogs 2018.
 PGS zasponsorowała mi za bilet na tę konferencję i w zamian oczekiwał, że zrobię LT na temat jednej z prelekcji. Wystąpienie Krzyśka spodobało mi się najbardziej, stąd zdecydowałem się pokrótce wam je przedstawić. Mam nadzieję, że przedstawiony materiał przekona was, że warto udać się na tę konferencję. A jakby ktoś chciał posłuchać pełnego wystąpienia Krzyśka, to tutaj jest link - mogę go również przesłać osobom zainteresowanym.
 
+0b. Agenda.
+Krótka agenda. Najpierw wyjaśnię o czym w ogóle mówimy, następnie podam pasującą definicję dług technicznego, a dalej opowiem o cechach spłacalnego długu technicznego.
 
 1a. Wprowadzenie - wyjaśnienie problemu
 Jaki jest dług techniczny systemu, jeśli wiemy, że nie dodamy do niego żadnego nowego feature, ani nie naprawimy ani jednego buga?
@@ -16,7 +18,7 @@ A co gdy zdecydujemy się dodać jeden drobny feature do naszego systemu? Jaki j
 
 
 2a. Dług techniczny 
-Czyli koszt pracy jaką musimy wykonać, aby do naszego systemu dodać nową funkcjonalność w sposób nieinwazyjny i bez haków.
+Myśląc w ten sposób, możemy zdefinicować dług techniczny jako koszt pracy jaką musimy wykonać, aby do naszego systemu dodać nową funkcjonalność w sposób nieinwazyjny i bez haków.
 Taka definicja nie ma nic wspólnego z tym, czy kod jest czysty, czy brudy, czy są testy, czy ich nie ma, ani jak duże jest pokrycie kodu testami. Czasami może zdażyć się i tak, że pomimo tego, że nasz kod jest czysty, to pojawi się takie nowe wymaganie, że i tak będziemy musieli wszystko przerobić.
 
 2b. Tetris
@@ -58,13 +60,13 @@ Możemy to zrobić w sposób celowy, gdy doskonale wiemy, że ten dług powstaje
 Pierwszy wariat to typowy zespół studentów. Pewnej wiedzy nie da się zdobyć na studiach i przychodzi ona dopiero wraz z doświadczeniem. Taki zespół może niewiedzieć po co są testy jednostkowe i dlaczego należy je pisać. Nie rozumieją tego, że bez testów poruszamy się trochę jak we mgle. Na to na szczęście mamy rozwiązania, takie jak code review, pair programing, workshopy czy lightning talki. Gorzej jest niestety u góry tego wykresu, bo działamy wtedy nieprofesjonalnie i w pełni świadomie perfidnie zaciągamy dług techniczny. Idąc do góry...
 
 4.1.2. TDQ
-W naszej branży wyłoniła się taka warstwa ludzi, że są już zmęczeni całym tym programowaniem, całym tym legacy kodem, że już im się nie chce. Krzysiek pieszczotliwie nazwał ich 'za starzy na JavaScript, za młodzi na śmierć'. Dobra wiadomość jest taka, że takich osób prawdopodobnie wśród nas nie ma, bo im by się już nie chciało przyjść posłuchać LT. Idąc dalej...
+W naszej branży wyłoniła się taka warstwa ludzi, że są już zmęczeni całym tym programowaniem, całym tym legacy kodem, że już im się nie chce. Krzysiek pieszczotliwie nazwał ich 'za starzy na JavaScript, za młodzi na śmierć'. Dobra wiadomość jest taka, że takich osób prawdopodobnie wśród nas tutaj nie ma, bo im by się już nie chciało przyjść posłuchać LT. Idąc dalej...
 
 4.1.3. TDQ
 Mamy sytuację gdy działamy profesjonalnie, mamy czysty kod, piszemy testy i zaciągamy dług techniczny. To jest takie MVP na poziomie feature. Mówimy sobie wtedy: 'Ok, nie róbmy wielkiej rzeczy, zróbmy najmniejszą rzecz jaka jest przydatna, która realizuje jakieś potrzeby, zobaczmy jak to będzie wyglądało w przyszłości i dopiero jak okaże się, że jest konieczność reaktrozyracji, że ten feature wypalił, to spłaćmy dług. Nie róbmy od razu wielkiej rzeczy, bo to nie ma sensu.'. To jest bardzo dobry scenariusz, najlepszy z tych wszystkich. Idąc na dół...
 
 4.1.4. TDQ
-Dochodzimy do momentu, w którym każdy developer, który jest zapasjonowany programowaniem miał kiedyś w życiu. Taka sytuacja, kiedy mówimy po czasie - 'aaa... to teraz już wiem jak to zrobić, szkoda że nie ma czasu, ale jakby był, to bym to zrobił tak, a tutaj tak.'. To jest sytuacja kiedy dopiero po czasie orientujemy się, że dług został zaciągnięty.
+Dochodzimy do momentu, w którym każdy developer, który jest lubi programowaniem miał kiedyś w życiu. Taka sytuacja, kiedy mówimy po czasie - 'aaa... to teraz już wiem jak to zrobić', niestety z reguly potem dodajemy 'szkoda że nie ma czasu, ale jakby był, to bym to zrobił tak, a tutaj tak.'. To jest sytuacja kiedy dopiero po czasie orientujemy się, że dług został zaciągnięty.
 
 Najważniejsze jest teraz to, aby zdać sobie sprawę w której ćwiartce się jest, a w której chciałoby się być. Ja już w swojej karierze byłem we wszystkich czterech. Obecnie staram się być w prawej-górej, wychodzi różnie.
 
@@ -79,7 +81,7 @@ Tylko działanie profesjonalne, ostrożne, zgodnie z dobrymi praktykami inżynie
 	
 4.3 Spłacalny dług techniczny
 - piszemy czysty kod
-W związku z tym, jeżeli chcemy mieć możliwość spłaty długu, to piszmy czysty kod.
+Konkluzja tego jest taka - jeżeli chcemy mieć możliwość spłaty długu, to piszmy czysty kod.
 
 4.3.1a.
 Bardzo często w naszej pracy zdarza nam się balansować między partyzantką, a over-inżynieringiem. A naszym celem jest przecież stworzenie oprogramowania, które będzie działać, klient będzie z niego zadowolony i będzie miało skończoną ilość bugów, które jesteśmy w stanie w rozsądnym czasie naprawić. I mimo tego, że jest dużo featurów, że jest dużo kodu, to nowe funkcjonalności dodajemy szybko.
@@ -116,8 +118,8 @@ To jest biblioteka Reacta. Kod front-endowy. Można zauważyć, że mało plikó
 4.3.2g. (PowerShell)
 To jest PowerShell. Kod napisany w .NET. 
 
-4.3.2h. (EntityFrameworkCore)
-To jest EntityFramework.
+4.3.2h. (EntityFramework)
+To jest EntityFrameworkCore.
 
 4.3.2i. (.NET WebApi)
 A to jest back-end naszego projektu w PGS dla klienta.
@@ -132,7 +134,7 @@ Jak do tego dodamy jeszcze autorów, wtedy może nam wyjść które pliki zmieni
 To prawdopodobnie byłby te pliki. Oczywiście pewności nie ma. Jednakże, jeśli ktoś jest zainteresowany tym tematem, to na githubie można znaleźć różne ciekawe metryki.
 
 - monitorujemy gdzie narastają odsetki
-Monitorujmy więc gdzie narastają odsetki naszego systemu, bo dzięki temu możemy dowiedzieć się gdzie nasz system żyje na prawdę.
+Podsumowując - monitorujmy więc gdzie narastają odsetki naszego systemu, bo dzięki temu możemy dowiedzieć się gdzie nasz system żyje na prawdę.
 
 4.3.3a.
 Czy ktoś z was widział kiedyś w swojej aplikacji nieużywany kod? Domyślam się, że tak. A czy ktoś go usunął? Domyślam się że nie.
@@ -182,11 +184,12 @@ Wielu z nas pracuje w metodyce agile, a on daje nam samoorganizację. Samoorgani
 4.3.4d.
 We cannot be agile if our code sucks - definiuje to, jaki powinien być agilowy developer. Nie że przychodzę na daily punktualnie tylko...	
 Jako developer powinienem dbać o swój kod, bo wiem, że jak mój kod nie będzie przystosowany na zmiany, nie będzie spełniał prostych zasad inżynierii oprogramowania czy trzymał się dobrych praktyk, to nigdy nie będę mógł być agile.
-Nie powinno być tak, że mądry developer, doświadczony developer idzie do managera i pyta się go na ile modułów powinien podzielić aplikację albo czy mamy czas, aby pisać testy. To jest trochę niedopuszczalne, bo jak my sami nie będziemy traktować się jak profesjonalnistów, to inni też nas tak nie będą traktowali.
+Nie powinno być tak, że mądry developer, doświadczony developer idzie do managera i pyta się go na ile modułów powinien podzielić aplikację albo czy mamy czas, aby pisać testy. To jest trochę niedopuszczalne, bo...
 	
 - traktujmy siebie jako profesjonalistów
+jak my sami nie będziemy traktować się jak profesjonalnistów, to inni też nas tak nie będą traktowali.
 
 To są punkty które zaprezentował Krzysiek. Można się z nimi zgadzać, można się nie zgadzać. Te rzeczy, które zostały zdefiniowane jako cechy spłacalnego długo technicznego są połączone przez dwa fakty. Pierwszym z nim jest to, że poruszają się w okół szeroko pojętego agile, który umożliwa nam zwinne reagowanie i czasami skakanie w bok, aby zrefaktoryzować jaką funkcjonalność i zmniejszyć dług. Drugą rzeczą, która łączy te punkty jest to, że ich wdrożenie zależy od nas, to my musimy podjąć inicjatywę. To my musimy zacząć monitorować gdzie narastają odsetki, dbać o to, aby nasz kod był czysty i prosty, usuwać nieużywany kod i funkcjonalności.
 Wielu programistów chwali się, że pisze czysty kod, ale w roku 2018 to jest po prostu podstawa. Wymagajmy więc od siebie trochę więcej, gdyż tylko tak możemy stworzyć społeczność profesjonalistów, która jest doceniania i szanowana za pracę, którą wykonuje.
 	
-4.4. Dziękuję
+4.4. Dziękuję. Czy są jakieś pytania?
